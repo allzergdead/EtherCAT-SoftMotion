@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ethercatwid</class>
+ <widget class="QWidget" name="ethercatwid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0" columnstretch="0,0,0">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="2" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>ETCConfig</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,0">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QWidget" name="slaveConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">     #slaveConfig{border: 1px solid #333333;
+  }  </string>
+         </property>
+         <widget class="QTableWidget" name="slaveTable">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>311</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #slaveTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="open_JSON">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>600</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>打开配置</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="creat_JSON">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>630</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>设定默认配置</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="saveAs_JSON">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>630</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>另存配置</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="getconf_JSON">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>630</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>获取默认配置</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="axisTable">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>320</y>
+            <width>371</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #axisTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="up">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>80</y>
+            <width>61</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="down">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>120</y>
+            <width>61</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>down</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="auto_config">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>590</y>
+            <width>101</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>自动配置SlaveID</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="updatAxis">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>630</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>刷新轴页</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QWidget" name="PDOConfig" native="true">
+         <property name="styleSheet">
+          <string notr="true">     #PDOConfig{border: 1px solid #333333;
+  }  </string>
+         </property>
+         <widget class="QTableWidget" name="assignTable">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>310</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #assignTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="indexTable">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>310</width>
+            <height>180</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #indexTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="PDOTable">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>30</y>
+            <width>641</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #PDOTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="startupTable">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>420</y>
+            <width>641</width>
+            <height>241</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">     #startupTable{border: 1px solid #333333;
+  }  </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>430</y>
+            <width>54</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>alias:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>450</y>
+            <width>54</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>position:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>470</y>
+            <width>54</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>pid:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>490</y>
+            <width>54</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>vid:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="alias">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>430</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="position">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>450</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(200,200,200);
+  border: 1px solid #333333;
+   </string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="pid">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>470</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="vid">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>490</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>轴页</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="axisTab">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Tab 1</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Tab 2</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

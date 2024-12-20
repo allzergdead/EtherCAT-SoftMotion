@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slave_startup_wid</class>
+ <widget class="QWidget" name="slave_startup_wid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="info">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>5</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>备注</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>54</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>index:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="subindex">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>5</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="index">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>5</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>5</y>
+     <width>61</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>subindex:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="value">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>5</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="write">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>5</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>写入</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>5</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>值:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="type">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>5</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>UCHAR_8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CHAR_8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>USHORT_16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SHORT_16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UINT_32</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>INT_32</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ULONG_64</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LONG_64</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

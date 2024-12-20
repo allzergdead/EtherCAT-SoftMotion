@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cConnectDialogClass</class>
+ <widget class="QDialog" name="cConnectDialogClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>cConnectDialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#cConnectDialogClass {
+    background-color: #3a3a3a; /* 更浅的灰色背景 */
+    color: #eeeeee; /* 更亮的灰色字体，提高可读性 */
+    font-size: 14px; /* 字体大小适中 */
+    border: 1px solid #505050; /* 与背景协调的边框颜色 */
+
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="cVarList" name="varList" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>600</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>70</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>367</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="reject">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #4d4d4d, stop:1 #5e5e5e); /* 更明显的灰色渐变背景 */
+    border: 2px solid #666666; /* 更深的灰色边框 */
+    border-radius: 10px; /* 圆角 */
+    padding: 6px 10px; /* 内边距 */
+    color: #ffffff; /* 白色文字，增加对比 */
+    font-size: 14px; /* 字体大小 */
+    text-align: center; /* 文本居中 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* 增强的外部阴影，更强立体感 */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #297229, stop:1 #3cb043); /* 绿色渐变背景 */
+    border: 2px solid #256f25; /* 更深绿色边框 */
+    color: #ffffff; /* 白色文字 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) inset; /* 内凹阴影，强调按下的立体效果 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #636363, stop:1 #747474); /* 更浅的灰色渐变背景 */
+    border: 2px solid #7d7d7d; /* 浅灰色边框 */
+    color: #aaaaaa; /* 更浅的灰色文本，增强对比度 */
+    box-shadow: none; /* 去除阴影，表示不可操作 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}
+
+QPushButton:disabled:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #297229, stop:1 #3cb043); /* 绿色背景的渐变与按下时一致 */
+    border: 2px solid #555555; /* 较暗的灰色边框，表示不可操作 */
+    color: #ffffff; /* 白色文本 */
+    box-shadow: none; /* 去除阴影，强调不可操作状态 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}</string>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="accept">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #4d4d4d, stop:1 #5e5e5e); /* 更明显的灰色渐变背景 */
+    border: 2px solid #666666; /* 更深的灰色边框 */
+    border-radius: 10px; /* 圆角 */
+    padding: 6px 10px; /* 内边距 */
+    color: #ffffff; /* 白色文字，增加对比 */
+    font-size: 14px; /* 字体大小 */
+    text-align: center; /* 文本居中 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* 增强的外部阴影，更强立体感 */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #297229, stop:1 #3cb043); /* 绿色渐变背景 */
+    border: 2px solid #256f25; /* 更深绿色边框 */
+    color: #ffffff; /* 白色文字 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) inset; /* 内凹阴影，强调按下的立体效果 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #636363, stop:1 #747474); /* 更浅的灰色渐变背景 */
+    border: 2px solid #7d7d7d; /* 浅灰色边框 */
+    color: #aaaaaa; /* 更浅的灰色文本，增强对比度 */
+    box-shadow: none; /* 去除阴影，表示不可操作 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}
+
+QPushButton:disabled:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #297229, stop:1 #3cb043); /* 绿色背景的渐变与按下时一致 */
+    border: 2px solid #555555; /* 较暗的灰色边框，表示不可操作 */
+    color: #ffffff; /* 白色文本 */
+    box-shadow: none; /* 去除阴影，强调不可操作状态 */
+    border-radius: 10px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+}</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>cVarList</class>
+   <extends>QWidget</extends>
+   <header>./include/cwidget/cvarlist.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

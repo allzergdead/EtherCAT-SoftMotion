@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slave_assign_wid</class>
+ <widget class="QWidget" name="slave_assign_wid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="size">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>5</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(200,200,200);
+     border:1px solid &quot;#22&quot;; 
+</string>
+   </property>
+   <property name="text">
+    <string>size</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="watchDog">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>5</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>EC_WD_DEFAULT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EC_WD_ENABLE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EC_WD_DISABLE</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="type">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(200,200,200);
+     border:1px solid &quot;#22&quot;; 
+</string>
+   </property>
+   <property name="text">
+    <string>type</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

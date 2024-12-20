@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>axis_setting_wid</class>
+ <widget class="QWidget" name="axis_setting_wid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="name">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>0</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#name{background: rgb(250,250,250);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>axisName</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#title{background: rgb(220,220,220);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>axisName</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="enc_ratio">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#enc_ratio{background: rgb(250,250,250);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>1048576</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="title_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#title_2{background: rgb(220,220,220);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>单圈脉冲数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="title_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#title_3{background: rgb(220,220,220);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>单圈用户单位</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="circle_diff">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#circle_diff{background: rgb(250,250,250);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>1.0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pdoNo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pdoNo{background: rgb(250,250,250);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>-1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="title_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#title_4{background: rgb(220,220,220);
+     border:1px solid &quot;#22&quot;; 
+}</string>
+   </property>
+   <property name="text">
+    <string>PDO编号</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="set_vaxis">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>60</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>文泉驿正黑</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>设置为虚轴</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
